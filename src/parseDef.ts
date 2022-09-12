@@ -63,7 +63,7 @@ export type JsonSchema7Type = (
   | JsonSchema7AllOfType
   | JsonSchema7UnknownType
   | JsonSchema7SetType
-) & { default?: any; description?: string };
+) & { default?: any; description?: string } & Partial<Record<'x-', any>>;
 
 export function parseDef(
   def: ZodTypeDef,
