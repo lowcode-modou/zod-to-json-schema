@@ -1,13 +1,13 @@
 {
-  "name": "zod-to-json-schema",
-  "version": "3.17.1",
+  "name": "@low-modou/zod-to-json-schema",
+  "version": "0.0.2",
   "description": "Converts Zod schemas to Json Schemas",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "dev": "jest --watch",
     "build": "rimraf dist && tsc && node copyPackageFiles.js",
-    "dryrun": "jest && npm run build && npm pub ./dist/ --dry-run"
+    "dryrun": "jest && npm run build && npm publish ./dist/ --access public --dry-run"
   },
   "keywords": [
     "zod",
@@ -17,12 +17,7 @@
     "api",
     "conversion"
   ],
-  "author": "Stefan Terdell",
-  "contributors": [
-    "Hammad Asif (https://github.com/mrhammadasif)",
-    "Noah Rosenzweig (https://github.com/Noah2610)",
-    "John Wright (https://github.com/johngeorgewright)"
-  ],
+  "author": "ll929",
   "repository": {
     "type": "git",
     "url": "https://github.com/StefanTerdell/zod-to-json-schema"
