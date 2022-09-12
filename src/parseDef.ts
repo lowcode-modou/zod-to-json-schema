@@ -38,6 +38,7 @@ import { Item, References } from "./References";
 
 type JsonSchema7RefType = { $ref: string };
 
+type CustomKey = `x-${string}`
 export type JsonSchema7Type = (
   | JsonSchema7StringType
   | JsonSchema7ArrayType
@@ -63,7 +64,7 @@ export type JsonSchema7Type = (
   | JsonSchema7AllOfType
   | JsonSchema7UnknownType
   | JsonSchema7SetType
-) & { default?: any; description?: string } & Partial<Record<'x-', any>>;
+) & { default?: any; description?: string } & Partial<Record<CustomKey, any>>;
 
 export function parseDef(
   def: ZodTypeDef,
@@ -203,7 +204,7 @@ const addMeta = (
   if (def.description) jsonSchema.description = def.description;
   Object.entries(def).forEach(([key,value]) => {
     if(key.startsWith('x-')){
-      jsonSchema[key as any] = value
+      jsonSchema[key as CustomKey] = value
     }
   })
   return jsonSchema;
