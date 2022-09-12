@@ -203,7 +203,7 @@ const addMeta = (
   if (def.description) jsonSchema.description = def.description;
   Object.entries(def).forEach(([key,value]) => {
     if(key.startsWith('x-')){
-      jsonSchema[key] = value
+      jsonSchema[key as any] = value
     }
   })
   return jsonSchema;
