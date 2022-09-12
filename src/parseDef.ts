@@ -201,5 +201,10 @@ const addMeta = (
   jsonSchema: JsonSchema7Type
 ): JsonSchema7Type => {
   if (def.description) jsonSchema.description = def.description;
+  Object.entries(def).forEach(([key,value]) => {
+    if(key.startsWith('x-')){
+      jsonSchema[key] = value
+    }
+  })
   return jsonSchema;
 };
