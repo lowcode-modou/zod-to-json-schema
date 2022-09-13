@@ -1,12 +1,9 @@
 {
   "name": "@lowcode-modou/zod-to-json-schema",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Converts Zod schemas to Json Schemas",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "jest",
     "dev": "jest --watch",
