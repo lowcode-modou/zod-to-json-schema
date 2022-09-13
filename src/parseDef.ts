@@ -193,6 +193,7 @@ const selectParser = (
     case ZodFirstPartyTypeKind.ZodVoid:
       return undefined;
     default:
+      // @ts-ignore
       return ((_: never) => undefined)(typeName);
   }
 };
