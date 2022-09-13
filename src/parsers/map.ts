@@ -1,4 +1,4 @@
-import { ZodMapDef } from "zod";
+import { ZodMapDef } from "@lowcode-modou/zod";
 import { JsonSchema7Type, parseDef } from "../parseDef";
 import { References } from "../References";
 

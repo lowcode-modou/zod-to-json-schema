@@ -1,4 +1,4 @@
-import { ZodFirstPartyTypeKind, ZodOptional, ZodTypeDef } from "zod";
+import { ZodFirstPartyTypeKind, ZodOptional, ZodTypeDef } from "@lowcode-modou/zod";
 import { parseOptionalDef } from "./parsers/optional";
 import { JsonSchema7AnyType, parseAnyDef } from "./parsers/any";
 import { JsonSchema7ArrayType, parseArrayDef } from "./parsers/array";

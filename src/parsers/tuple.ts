@@ -1,4 +1,4 @@
-import { ZodTupleDef, ZodTupleItems, ZodTypeAny } from "zod";
+import { ZodTupleDef, ZodTupleItems, ZodTypeAny } from "@lowcode-modou/zod";
 import { JsonSchema7Type, parseDef } from "../parseDef";
 import { References } from "../References";
 

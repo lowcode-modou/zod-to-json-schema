@@ -1,4 +1,4 @@
-import { ZodStringDef } from "zod";
+import { ZodStringDef } from "@lowcode-modou/zod";
 
 export type JsonSchema7StringType = {
   type: "string";

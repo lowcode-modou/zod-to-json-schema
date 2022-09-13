@@ -1,4 +1,4 @@
-import { ZodNumberDef } from "zod";
+import { ZodNumberDef } from "@lowcode-modou/zod";
 import { References } from "../References";
 
 export type JsonSchema7NumberType = {

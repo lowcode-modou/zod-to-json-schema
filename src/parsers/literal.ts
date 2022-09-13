@@ -1,4 +1,4 @@
-import { ZodLiteralDef } from "zod";
+import { ZodLiteralDef } from "@lowcode-modou/zod";
 import { References } from "../References";
 
 export type JsonSchema7LiteralType =

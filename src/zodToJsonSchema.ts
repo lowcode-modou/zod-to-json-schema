@@ -1,4 +1,4 @@
-import { ZodSchema } from "zod";
+import { ZodSchema } from "@lowcode-modou/zod";
 import { JsonSchema7Type, parseDef } from "./parseDef";
 import { $refStrategy, EffectStrategy, Target, References } from "./References";
 

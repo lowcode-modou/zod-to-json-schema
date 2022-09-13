@@ -1,4 +1,4 @@
-import { ZodFirstPartyTypeKind, ZodRecordDef, ZodTypeAny } from "zod";
+import { ZodFirstPartyTypeKind, ZodRecordDef, ZodTypeAny } from "@lowcode-modou/zod";
 import { JsonSchema7Type, parseDef } from "../parseDef";
 import { References } from "../References";
 import { JsonSchema7EnumType } from "./enum";

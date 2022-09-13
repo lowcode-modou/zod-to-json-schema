@@ -1,4 +1,4 @@
-import { ZodDefaultDef } from "zod";
+import { ZodDefaultDef } from "@lowcode-modou/zod";
 import { JsonSchema7Type, parseDef } from "../parseDef";
 import { References } from "../References";
 

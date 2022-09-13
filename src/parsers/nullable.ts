@@ -1,4 +1,4 @@
-import { ZodNullableDef } from "zod";
+import { ZodNullableDef } from "@lowcode-modou/zod";
 import { JsonSchema7Type, parseDef } from "../parseDef";
 import { References } from "../References";
 import { JsonSchema7NullType } from "./null";
