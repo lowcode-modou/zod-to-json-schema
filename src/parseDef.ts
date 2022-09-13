@@ -38,7 +38,7 @@ import { Item, References } from "./References";
 
 type JsonSchema7RefType = { $ref: string };
 
-type CustomKey = `x-${string}`
+type ExtraKey = `x-${string}`
 export type JsonSchema7Type = (
   | JsonSchema7StringType
   | JsonSchema7ArrayType
@@ -204,7 +204,7 @@ const addMeta = (
   if (def.description) jsonSchema.description = def.description;
   Object.entries(def).forEach(([key,value]) => {
     if(key.startsWith('x-')){
-      jsonSchema[key as CustomKey] = value
+      jsonSchema[key as ExtraKey] = value
     }
   })
   return jsonSchema;
